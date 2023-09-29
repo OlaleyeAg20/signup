@@ -1,0 +1,124 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: #5200FF;
+    width: 100%;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    align-items: center;
+    flex-direction: column;
+}
+.introText, .subIntro{
+    color: #FFFFFF;
+    display: block;
+    width: min(75%, 425px);
+    text-align: center;
+    margin: 30px auto;
+}
+.introText{
+    font-size: 32px;
+    line-height: 48px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFF;
+    text-align: center;
+    font-style: normal;
+}
+.subIntro{
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+label{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8em;
+    margin: 18px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    cursor: pointer;
+    width: min(480px, 100%);
+}
+button,input{
+    padding: 12px 9px;
+    border: none;
+}
+button{
+    margin: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    background: #6B2BF2;
+    color: #FFF;
+    font-size: 18px;
+    line-height: normal;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+}
+input{
+    background: #E5E5E5;
+    width: min(480px, 100%);
+}
+
+@media screen and (max-width: 550px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 50px auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        margin: 0;
+        padding: 0;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 100px;
+    }
+    .container{
+        background: #5200FF;
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+    .header{
+        background-image: url(bg.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    button,input{
+        width: min(480px, 100%);
+    }
+}
+
